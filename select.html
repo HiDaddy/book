@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+	    <meta http-equiv="Pragma"content="no-cache" />
+	    <meta http-equiv="Cache-Control" content="no-cache">
+	    <meta http-equiv="Expires" content="0">
+	    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	    <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<header id="header" class="retion_bar retion_bar_nav">
+				<h1 class="retion_title">选择座位</h1>
+				<a href="retionDetails.html" class="retion_back retion_icon retion_icon_left_nav retion_pull_left"></a>
+			</header>
+			<div class="retion_content">
+				<div class="select_content_top">
+					<div class="select_content_tab">
+						<div class="select_content_tab_tit">
+							<span>五公里校区</span> 
+							<span>阅览室2楼</span>
+						</div>
+						<div class="select_content_tab_time">今天5月23日  16:35~20:30</div>
+					</div>
+				</div>
+				<div class="select_center">
+					<ul class="clearfix">
+						<li class="select_center_num select_center_not">001</li>
+						<li class="select_center_num select_center_active">002</li>
+						<li class="select_center_num">003</li>
+						<li class="select_center_num">004</li>
+						<li class="select_center_num">003</li>
+						<li class="select_center_num">004</li>
+						<li class="select_center_num">003</li>
+						<li class="select_center_num">004</li>
+						<li class="select_center_num">003</li>
+						<li class="select_center_num">004</li>
+						<li class="select_center_num">003</li>
+						<li class="select_center_num">004</li>
+						<li class="select_center_num">003</li>
+						<li class="select_center_num">004</li>
+						<li class="select_center_num">003</li>
+						<li class="select_center_num">004</li>
+					</ul>
+				</div>
+				<div class="select_bottom">
+					<div class="select_bottom_main">
+						<span class="select_bottom_num">050号</span>
+						<div class="select_bottom_tit">
+							<img src="img/select1.png"/>
+							可选
+						</div>
+						<div class="select_bottom_tit">
+							<img src="img/selecthong.png"/>
+							已占
+						</div>
+						<div class="select_bottom_tit">
+							<img src="img/selectlan.png"/>
+							已选
+						</div>
+					</div>
+					<div class="select_bottom_btn">
+						确认选座
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			$(".select_center_num").on("click",function(){
+				//多选
+				/*if($(this).hasClass("select_center_active")){
+					$(this).removeClass("select_center_active");
+					return;
+				}
+				if(!$(this).hasClass("select_center_not")){
+					$(this).addClass("select_center_active");
+				}*/
+				//单选
+				if(!$(this).hasClass("select_center_not")){
+					$(this).addClass("select_center_active").siblings().removeClass("select_center_active");
+				}
+			})
+		</script>
+	</body>
+</html>

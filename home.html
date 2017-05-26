@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no,minimal-ui">
+	    <meta http-equiv="Pragma"content="no-cache" />
+	    <meta http-equiv="Cache-Control" content="no-cache">
+	    <meta http-equiv="Expires" content="0">
+	    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+	    <script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	    <style type="text/css">
+	    	body,html{
+	    		background-color: #efeff4;
+	    	}
+	    	
+	    </style>
+		<title></title>
+	</head>
+	<body>
+		<div class="home_main">
+			<div class="home_top">
+				<div class="home_top_name">hi,20100521<label></label></div>
+				<div class="home_top_title">图书馆座位预约</div>
+				<div class="home_top_link">预约规则<label></label></div>
+				<div class="home_top_btn">实时查询</div>
+			</div>
+			<div class="home_center">
+				<div class="home_center_item">
+					<div class="home_center_tab flex">
+						<p class="home_center_tab_left">最新预约</p>
+						<p class="home_center_tab_right">全部预约</p>
+					</div>
+					<!--数据展示-->
+					<div class="home_center_list">
+						<div class="home_center_list_yue">约</div>
+						<p class="home_center_list_tit1">图书预览室二室 013</p>
+						<p class="home_center_list_tit2">
+							今天 09:20，五公里校区
+						</p>
+						<p class="home_center_list_tit3">
+							您成功预约了图书阅览室座位 013。 
+						</p>
+						<p class="home_center_list_tit4">
+							请您在5月23日早上9:20之前刷卡进入图书馆，否则 预约失效，及违规一次。
+						</p>
+						<div class="home_center_list_tit5">预览平面图</div>
+						<div class="home_center_list_tit6 flex">
+							<p class="home_center_list_tit6_time">2017-04-15 16:52:56</p>
+							<div class="home_center_list_tit6_link">取消预约</div>
+						</div>
+					</div>
+					<!--如果没有数据 就显示下面这个-->
+					<div class="home_center_null_tab">
+						<p class="home_center_null_tit">无最新的预约进行中的记录</p>
+						<a href="reservation.html">
+							<div class="home_center_null_btn">我要预约</div>
+						</a>
+					</div>
+				</div>
+			
+			</div>
+			<div class="home_bottom">
+				<div class="home_bottom_item">
+					<div class="home_bottom_tab flex">
+						<p class="home_bottom_tab_left">违规记录</p>
+						<p class="home_bottom_tab_right">共3条记录</p>
+					</div>
+					<!--数据展示-->
+					<div class="home_bottom_main clearfix">
+						<div>
+							<div class="home_bottom_time">
+								9:20~11:20
+								<span>20/04</span>
+							</div>
+							<div class="home_bottom_list">
+								<div class="home_bottom_list_main">
+									<div class="home_bottom_list_img"><img src="img/chidao.png"/></div>
+									<div class="home_bottom_list_tab">
+										<p class="home_bottom_list_tab_name1 flex">
+											<span>迟到</span>
+											<span class="home_bottom_list_btn">
+												<img src="img/xiangqin.png"/>
+												详情
+											</span>
+										</p>
+										<p class="home_bottom_list_tab_name2">未按时进入图书馆,将位置闲置,浪费资源。</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div>
+							<div class="home_bottom_time">
+								9:20~11:20
+								<span>20/04</span>
+							</div>
+							<div class="home_bottom_list">
+								<div class="home_bottom_list_main">
+									<div class="home_bottom_list_img"><img src="img/shaoma.png"/></div>
+									<div class="home_bottom_list_tab">
+										<p class="home_bottom_list_tab_name1 flex">
+											<span>离开未扫码</span>
+											<span class="home_bottom_list_btn">
+												<img src="img/xiangqin.png"/>
+												详情
+											</span>
+										</p>
+										<p class="home_bottom_list_tab_name2">你离开没有按规定扫码,下次请记得扫码离开。</p>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="home_tips"><span>没有更多了</span></div>
+					</div>
+					<!--如果没有数据 就显示下面这个-->
+					<div class="home_bottom_null_tab">
+						<div>太棒了，你没有违规记录</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
