@@ -63,14 +63,17 @@
                 showScrollArrows: true // More info about showScrollArrows: https://docs.mobiscroll.com/3-0-0_beta5/calendar#!opt-showScrollArrows
             });
             //判断是否选择时间
-            var Interval = setInterval( function(){
-            	if($("#rangeTwoinputs-endDate").val().length > 0 && $("#rangeTwoinputs-startDate").val().length > 0){
-            		window.location.href = "select.html"
-            		// setTimeout(()=>{
-            		// 	window.location.href = "select.html"
-            		// },100)
+            if($("#rangeTwoinputs-endDate").val().length > 0 && $("#rangeTwoinputs-startDate").val().length > 0){
+            	window.location.href = "select.html"
             	}
-            },100)
+            // var Interval = setInterval( function(){
+            // 	if($("#rangeTwoinputs-endDate").val().length > 0 && $("#rangeTwoinputs-startDate").val().length > 0){
+            // 		window.location.href = "select.html"
+            // 		setTimeout(()=>{
+            // 			window.location.href = "select.html"
+            // 		},100)
+            // 	}
+            // },100)
 		</script>
 	</body>
 </html>
